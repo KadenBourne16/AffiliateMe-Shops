@@ -1,0 +1,92 @@
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .SignUpContainer{
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* Changed to 2 columns */
+      grid-template-rows: 2fr;
+      grid-template-areas: "leftSide rightSide"; /* Changed to side by side */
+      border-width: 0.5px;
+      border-radius: 10px;
+      margin: 10em;
+      padding: 1em;
+      background-color: whitesmoke; /* Added background color */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.753); /* Added drop shadow */
+  }
+  
+  .leftSection{
+      grid-area: leftSide;
+      border-right: solid black 2px;
+  }
+  
+  .rightSection{
+    align-items: center;
+    text-align: center;
+      grid-area: rightSide;
+      margin-left: 0.5em;
+  }
+
+  .form_components{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "left right";
+  }
+
+.left{
+    grid-area: left;
+}
+
+.right{
+    grid-area: right;
+}
+
+input{
+    margin-top: 1em;
+    font-size: 0.9em;
+    width: 25em;
+    height: 2.5em;
+}
+
+.create_button {
+  transition: width 0.5s ease; /* Added transition effect */
+  width: 28em; /* Initial width */
+  height: 3em;
+  background-color: #16e732;
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+
+.create_button:hover {
+  width: 30em;
+  cursor: pointer;
+}
+
+.selectInput{
+    margin-top: 1em;
+    font-size: 0.9em;
+    width: 26em;
+    height: 2.8em;
+    background-color: white;
+}
+
+.roleInput{
+    margin-top: 1em;
+    font-size: 0.9em;
+    width: 26em;
+    height: 2.8em;
+}
+
+.date{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1em;
+    font-size: 0.74em;
+    width: 31em;
+    height: 3em;
+}

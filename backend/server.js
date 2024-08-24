@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true })); // add this line to parse URL-e
 
 // Routes
 app.use('', userRouter);
-
+ 
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err);
