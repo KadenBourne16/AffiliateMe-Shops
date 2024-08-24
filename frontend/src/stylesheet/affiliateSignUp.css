@@ -20,6 +20,9 @@
   
   .leftSection{
       grid-area: leftSide;
+      background-image: url("../Images/Vita.png");
+      background-size: cover;
+      background-position: 50%;
       border-right: solid black 2px;
   }
   
@@ -66,6 +69,8 @@ input{
 .create_button:hover {
   width: 30em;
   cursor: pointer;
+  background-color: green;
+  color: white;
 }
 
 .selectInput{
@@ -89,4 +94,9 @@ input{
     font-size: 0.74em;
     width: 31em;
     height: 3em;
+}
+
+pre{
+  color: red;
+  display: none;
 }
