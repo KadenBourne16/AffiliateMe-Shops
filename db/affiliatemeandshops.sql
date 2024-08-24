@@ -1,0 +1,2 @@
+USE affiliatemedb;
+DESCRIBE users;
