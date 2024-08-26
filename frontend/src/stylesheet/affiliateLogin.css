@@ -1,0 +1,93 @@
+.main_container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image login";
+    height: auto; */
+    background-image: url('../Images/Vita.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.514); /* adjust the opacity value to your liking */
+  }
+
+.login_container{
+    background: linear-gradient(135deg, rgba(133, 129, 129, 0.1), rgba(0, 0, 0, 0.788));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.842); 
+    align-items: center;
+    text-align: center;
+    margin: 10em 2em 0em 5em;
+    padding: 2.5em;
+    border-radius: 10px;
+}
+
+.green-bordered {
+    border: none;
+    margin-top: 3em;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
+}
+
+.green-bordered::placeholder {
+    color: #ffffff; /* Replace #ccc with your desired color */
+    font-weight: bolder;
+}
+
+.green-bordered:focus {
+    border: none;
+    outline: none; /* Remove the default outline */
+    box-shadow: none;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green; /* Remove the default box shadow */
+}
+
+
+.login_button{
+    margin-top: 4em;
+    transition: width 0.5s ease; /* Added transition effect */
+  width: 28em; /* Initial width */
+  height: 3em;
+  background-color: rgb(22, 233, 50);
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+
+
+
+.login_button:hover {
+    width: 30em;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgb(22, 233, 50), rgba(0, 0, 0, 0.788));
+    color: white;
+}
+
+.login_p{
+    color: white;
+}
+
+.login_h1 {
+    color: transparent; /* Set the text color to transparent */
+    background: linear-gradient(to left, #33ff00, #023f07); /* Define the gradient */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+}
+
+.link{
+    color: blue;
+    font-stretch: wider;
+    font-weight: bolder;
+}

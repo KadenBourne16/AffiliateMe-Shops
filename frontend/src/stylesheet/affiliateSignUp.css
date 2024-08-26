@@ -25,6 +25,14 @@
       background-position: 50%;
       border-right: solid black 2px;
   }
+
+  .signup_h1 {
+    font-size: xx-large;
+    color: transparent; /* Set the text color to transparent */
+    background: linear-gradient(to right, #00ff22, #000000); /* Define the gradient */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+}
   
   .rightSection{
     align-items: center;
