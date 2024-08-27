@@ -1,19 +1,20 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SignUp from './components/affiliatemeSignUp.jsx'
-import Login from './components/affiliatemeLogin.jsx'
+import SignUp from './components/affiliatemeSignUp.jsx';
+import Login from './components/affiliatemeLogin.jsx';
+import Dashboard from './components/affilaiteDashboard.jsx';
 
 function App() {
   return (
-    <div> {/* Add a root element */}
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/signup' element={<SignUp/>} />
-          <Route path='/login' element={<Login/>}></Route>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
   )
 }
 
-export default App
+export default App;

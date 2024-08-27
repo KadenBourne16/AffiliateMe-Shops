@@ -101,7 +101,7 @@ function SignUp(){
 
     if(dataOkay){
       setUserData((prev) => ({ ...prev, [name]: value }));
-      setUserData((prev) => ({ ...prev, errors: {} }));
+      setUserData((prev) => ({ ...prev, errors:{}}));
       console.log(name, value)
     }else{
       setUserData((prev) => ({ ...prev, errors: { ...prev.errors, ...errors } }));
