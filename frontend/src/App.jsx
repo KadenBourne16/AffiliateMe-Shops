@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SignUp from './components/affiliatemeSignUp.jsx';
-import Login from './components/affiliatemeLogin.jsx';
-import Dashboard from './components/affilaiteDashboard.jsx';
+import SignUp from './Activities/SignupActivity.jsx';
+import Login from './Activities/LoginActivity.jsx';
+import Dashboard from './Activities/DashboardActivity.jsx';
+import './main.css'
 
 function App() {
   return (
