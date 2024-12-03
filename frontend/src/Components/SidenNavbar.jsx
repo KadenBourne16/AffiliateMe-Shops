@@ -20,19 +20,19 @@ const SideNavbar = () => {
   ];
 
   return (
-    <div className="w-64 h-screen bg-white shadow-lg overflow-y-auto">
-      <h1 className="text-green-700 font-semibold text-xl p-4">AffluenceLinks</h1>
-      <ul className="space-y-1"> {/* Reduced spacing between items */}
-        {navItems.map((item, index) => (
-          <li key={index}>
-            <Link to={item.path} className="flex items-center text-green-700 hover:bg-green-600 hover:text-white transition-colors duration-200 p-3 cursor-pointer"> {/* Reduced padding */}
-              <span className="mr-2">{item.icon}</span>
-              {item.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <div className="w-auto h-auto bg-gray-800 shadow-lg sticky right-0 top-0 z-auto">
+    <h1 className="text-blue-700 font-bold text-xl p-4">AFFLUENCELINKS</h1>
+    <ul className="space-y-1"> {/* Reduced spacing between items */}
+      {navItems.map((item, index) => (
+        <li key={index}>
+          <Link to={item.path} className="flex items-center text-white hover:bg-blue-200 hover:text-white transition-colors duration-200 p-3 cursor-pointer"> {/* Reduced padding */}
+            <span className="mr-2">{item.icon}</span>
+            {item.name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
   );
 };
 
