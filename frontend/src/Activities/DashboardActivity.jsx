@@ -1,7 +1,7 @@
 // Dashboard.js
-import React from 'react';
 import SideNavbar from '../Components/SidenNavbar';
 import NavBar2 from '../Components/GeneralComponents/Navbar2';
+
 
 function Dashboard() {
   return (
@@ -14,10 +14,9 @@ function Dashboard() {
       {/* Main Content Area */}
       <div className="flex-grow">
         <NavBar2 />
-        <div className='overflow-y-auto' style={{ height: "calc(auto - 64px)" }}>
+        <div className='overflow-y-auto' style={{ height: "calc(100vh - 64px)" }}>
           <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
           <div style={{ height: "1000px" }}> {/* Placeholder for content */}
-            {/* Your dashboard content goes here */}
           </div>
         </div>
       </div>

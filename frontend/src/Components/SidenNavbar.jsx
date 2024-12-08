@@ -20,7 +20,7 @@ const SideNavbar = () => {
   ];
 
   return (
-    <div className="w-auto h-auto bg-gray-800 shadow-lg sticky right-0 top-0 z-auto">
+    <div className="w-auto h-screen bg-gray-800 shadow-lg sticky right-0 top-0 z-auto">
     <h1 className="text-blue-700 font-bold text-xl p-4">AFFLUENCELINKS</h1>
     <ul className="space-y-1"> {/* Reduced spacing between items */}
       {navItems.map((item, index) => (

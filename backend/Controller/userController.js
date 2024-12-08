@@ -1,44 +1,51 @@
-const bcryptjs = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 const db = require('../DBConnection/dbconnection')
+const body = require('body-parser');
+const axios = require('axios');
 
-exports.loginUser = async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    if (!email || !password) {
-      return res.status(400).send({ message: "Email and password are required" });
+exports.validateUser = async(req, res) => {
+    const loginData = {
+        email: "",
+        password: ""
     }
 
-    const query = "SELECT * FROM users WHERE email = ?";
-    const [results] = await db.query(query, [email]);
-
-    if (results.length === 0) {
-      return res.status(401).send({ message: "Invalid email or password" });
+    try{
+        const recievedData = req.body
+        loginData.email = recievedData.email;
+        loginData.password = recievedData.password;
+        res.json({message: "Success"});
+    }catch(err){
+        res.status(500).json({message: "Error posting data"})
     }
 
-    const user = results[0];
-    const isValidPassword = await bcryptjs.compare(password, user.password);
-    if (!isValidPassword) {
-      return res.status(401).send({ message: "Invalid email or password" });
-    }
+    console.log("The login data is: " , loginData);
+}
 
-    const token = jwt.sign({ userId: user.id }, process.env.SECRET_KEY, { expiresIn: '1h' });
-    res.send({ message: "Login successful", token });
-  } catch (err) {
-    console.error(err);
-    res.status(500).send({ message: "Error logging in user" });
-  }
-};
+exports.registerUser = async(req, res) => {
+    const registerData = {
+        firstname: "",
+        lastname: "",
+        email: "",
+        date: "",
+        phonenumber: "",
+        country: "",
+        username: "",
+        password: "",
+    };
 
-exports.registerUser = async (req, res) => {
-    const { username, email, password } = req.body;
-  
-    try {
-      const query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
-      await db.query(query, [username, email, password]);
-      res.status(201).send({ message: 'User registered successfully' });
-    } catch (err) {
-      console.error(err);
-      res.status(500).send({ message: 'Error registering user' });
-    }
-  };
+    try{
+        const recievedRegister = req.body;
+        registerData.firstname = recievedRegister.firstname;
+        registerData.lastname = recievedRegister.lastname;
+        registerData.email = recievedRegister.email;
+        registerData.date = recievedRegister.date;
+        registerData.phonenumber = recievedRegister.phonenumber;
+        registerData.country = recievedRegister.country;
+        registerData.username = recievedRegister.username;
+        registerData.password = recievedRegister.password;
+        res.json({message: "Validating"});
+    }catch(err){
+        res.status(200).json({message: err});
+    };
+
+    console.log(registerData);
+}

@@ -1,5 +1,4 @@
 // NavBar.js
-import React from 'react';
 import { FaShoppingCart, FaSearch, FaUser  } from 'react-icons/fa'; // Importing icons
 
 const NavBar2 = () => {
@@ -8,7 +7,6 @@ const NavBar2 = () => {
       {/* Logo and App Name */}
       <div className="flex items-center">
         <img src="path-to-your-logo.png" alt="Logo" className="h-10" />
-        <h1 className="ml-3 text-xl font-bold">AffluenceLink</h1>
       </div>
 
       {/* Search Bar */}

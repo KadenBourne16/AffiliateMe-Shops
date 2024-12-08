@@ -13,23 +13,48 @@ function SignUp() {
     country: "",
     username: "",
     password: "",
+    confirmPassword: "",
     errors: {},
-    errorTimeout: null
   });
 
-  const [confirmpassword, setConfirmPassword] = useState(null);
-
-  const handleClick = async (e) => { 
+  const submitToBackend = async (e) => {
     e.preventDefault();
+    const newErrors = {}; // Create a new object to hold errors
+    let hasError = false; // Flag to check if there are any errors
+
+    // Validate all fields
+    Object.keys(userdata).forEach(key => {
+      if (key !== "errors" && (userdata[key] === "" || userdata[key] === null)) {
+        newErrors[key] = `${key} is required`;
+        hasError = true;
+      }
+    });
+
+    // Check password match
+    if (userdata.password !== userdata.confirmPassword) {
+      newErrors.passwordMatch = "Passwords do not match";
+      hasError = true;
+    }
+
+    // If there are any errors, update state and prevent submission
+    if (hasError) {
+      setUserData(prev => ({ ...prev, errors: newErrors }));
+      return;
+    }
+
+    // If no errors, proceed to submit the data
     try {
-      const res = await axios.post('/register', userdata);
-      return res;
+      const res = await axios.post('http://localhost:3000/affluencelink/register', userdata);
+      console.log(res);
+      // Optionally reset the form or show a success message
     } catch (err) {
-      console.log("Data could not be sent");
+      console.log("Data could not be sent", err);
     }
   }
 
   const handleChange = (e) => {
+    // const { name, value } = e.target;
+    // setUserData(prev => ({ ...prev, [name]: value, errors: { ...prev.errors, [name]: "" } })); 
     const { name, value } = e.target;
     const errors = {};
     var dataOkay = true;
@@ -78,12 +103,13 @@ function SignUp() {
     }
 
     if (name === "confirmPassword") {
-      if (value !== userdata.password) {
-        errors.confirmPassword = "Passwords do not match";
+      if (value == userdata.password) {
+        errors.confirmPassword = "Passwords matches";
+        dataOkay = true;
+        setUserData((prev) => ({ ...prev, passwordMatch: value}));
+        console.log(value);
       } else {
-        errors.passwordMatch = "Password matches now";
-        setUserData((prev) => ({ ...prev, errors: { ...prev.errors, passwordMatch: "Password matches now" } }));
-        setUserData((prev) => ({ ...prev, password: value }));
+        errors.passwordMatch = "Password does not match";
       }
     }
   
@@ -106,7 +132,15 @@ function SignUp() {
 
   const handleSelect = (code) => {
     setSelected(code);
-    setUserData((prev) => ({ ...prev, country: code }));
+    let country_name = "";
+    switch(code){
+      case "GH":
+        country_name = "Ghana";
+        break;
+      default:
+        country_name = "";
+    }
+    setUserData(prev => ({ ...prev, country: country_name }));
   }
 
   return (
@@ -117,13 +151,13 @@ function SignUp() {
         <p className="text-lg mb-6">You are so close to making money</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           <div className="flex flex-col">
-            <input type="text" name="firstname" placeholder="First Name" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" />
+            <input type="text" name="firstname" placeholder="First Name" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" required />
             {userdata.errors.firstname && <div className="text-red-500">{userdata.errors.firstname}</div>}
 
-            <input type="text" name="lastname" placeholder="Last Name" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" />
+            <input type="text" name="lastname" placeholder="Last Name " onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" required/>
             {userdata.errors.lastname && <div className="text-red-500">{userdata.errors.lastname}</div>}
 
-            <input type="email" name="email" placeholder="Email" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" />
+            <input type="email" name="email" placeholder="Email" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" required/>
             {userdata.errors.email && <div className="text-red-500">{userdata.errors.email}</div>}
 
             <input type="date" name="date" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" max={new Date().getFullYear() - 15} min="1900-01-01" />
@@ -152,10 +186,11 @@ function SignUp() {
 
             <input type="password" name="confirmPassword" placeholder="Confirm Password" onChange={handleChange} className="border border-gray-300 rounded-lg p-2 mb-2" />
             {userdata.errors.confirmPassword && <div className="text-red-500">{userdata.errors.confirmPassword}</div>}
-            {userdata.errors.passwordMatch && <div className="text-green-500">{userdata.errors.passwordMatch}</div>}
+            {userdata.errors.passwordMatch && <div className="text-red-500">{userdata.errors.passwordMatch}</div>}
           </div>
+          {userdata.errors.overall && <div className="text-red-500">{userdata.errors.overall}</div>}
         </div>
-        <input className="mt-4 w-full h-12 bg-green-500 rounded-lg text-white font-bold transition-all duration-300 ease-in-out hover:bg-green-600 cursor-pointer" type="button" value="Create" onClick={handleClick} />
+        <input className="mt-4 w-full h-12 bg-green-500 rounded-lg text-white font-bold transition-all duration-300 ease-in-out hover:bg-green-600 cursor-pointer" type="button" value="Create" onClick={submitToBackend} />
       </div>
     </div>
   );

@@ -2,19 +2,20 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
-const port = 3500;
-const db = require('./DBConnection/dbconnection');
+const port = 3000;
 const userRouter = require('./Router/userRouter');
+const bodyParser = require('body-parser');
 
 // Middleware
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // add this line to parse URL-encoded bodies
+app.use(bodyParser.json());
 
 // Routes
-app.use('', userRouter);
- 
+app.use('/affluencelink', userRouter);
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err);
