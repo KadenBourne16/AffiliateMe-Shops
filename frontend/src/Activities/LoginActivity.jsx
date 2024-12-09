@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios'; // Import axios for making HTTP requests
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
   const [login, setLogin] = useState({
     email: "",
     password: "",
     errors: {},
   });
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     setLogin((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -47,11 +50,23 @@ function Login() {
         email: login.email,
         password: login.password,
       });
+
+      // Check if the response is valid
       if (!response || !response.data) {
         throw new Error("Invalid response from the server.");
       }
-      console.log("Login successful:", response.data);
+
+      // Check for success message
+      if (response.data.message === "Login successful") {
+        navigate("/dashboard"); // Redirect to the dashboard
+      } else {
+        // Handle other messages (e.g., invalid credentials)
+        setErrorMessage(response.data.message);
+        console.error("Login failed:", response.data.message);
+      }
     } catch (err) {
+      // Handle errors (network issues, server errors, etc.)
+      setErrorMessage("An error occurred during login. Please try again.");
       console.error("An error occurred during login:", err.message || err);
     }
   };
@@ -91,7 +106,7 @@ function Login() {
             className="mt-8 w-full h-14 bg-green-500 rounded-lg text-white font-bold transition-all duration-500 ease-in-out hover:bg-green-600 text-lg"
             onClick={handleSubmit}
           />
-
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
           <div className="mt-6 text-center">
             <p className="text-white text-lg">Don't have an account?</p>
             <Link to="/signup" className="text-blue-400 font-bold text-lg">Sign Up</Link>
