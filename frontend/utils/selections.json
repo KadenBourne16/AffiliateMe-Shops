@@ -1,0 +1,15 @@
+{
+    "clothing": ["tanks", "t-shirts", "shirts", "sleevless", "office-wear"],
+    "shoes": [{
+        "ladies": ["high hills", "down foot", "slippers"],
+        "men": ["office-shoes", "boots", "sandals"],
+        "children":["loafers", "slides", "kicks"]
+        }
+    ],
+    "electronics":[
+        {
+            "kitchen": ["blender", "microwave", "rice cookers", "water heaters"]
+        }
+    ],
+    "phones": ["tablets", "mobile phones"]
+}

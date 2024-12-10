@@ -58,15 +58,19 @@ function Login() {
 
       // Check for success message
       if (response.data.message === "Login successful") {
-        navigate("/dashboard"); // Redirect to the dashboard
+        navigate("/dashboard"); 
+        console.log(response.data.userId);
+        localStorage.setItem('loggedIn', 'true');
+        localStorage.setItem('userId', response.data.userId);// Redirect to the dashboard
       } else {
         // Handle other messages (e.g., invalid credentials)
         setErrorMessage(response.data.message);
         console.error("Login failed:", response.data.message);
+        
       }
     } catch (err) {
       // Handle errors (network issues, server errors, etc.)
-      setErrorMessage("An error occurred during login. Please try again.");
+      setErrorMessage("An error occurred during login. Please try again");
       console.error("An error occurred during login:", err.message || err);
     }
   };
