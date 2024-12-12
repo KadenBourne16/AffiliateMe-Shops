@@ -58,8 +58,9 @@ function Login() {
 
       // Check for success message
       if (response.data.message === "Login successful") {
-        navigate("/dashboard"); 
-        console.log(response.data.userId);
+        navigate("/dashboard");
+        // console.log(response);
+        // console.log("Login Id: " + response.data.userId);
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('userId', response.data.userId);// Redirect to the dashboard
       } else {
@@ -77,7 +78,7 @@ function Login() {
 
   return (
     <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('../Images/Vita.png')" }}>
-      <div className="absolute inset-0 bg-black opacity-80"></div>
+      <div className="absolute inset-0 bg-black"></div>
       <div className="relative flex items-center justify-center h-full">
         <div className="bg-gradient-to-br from-gray-900 to-black bg-opacity-80 backdrop-blur-lg shadow-lg rounded-lg p-10 sm:p-12 md:p-16 lg:p-20 mx-4 w-full max-w-lg">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-l from-green-400 to-green-600 text-4xl sm:text-5xl font-bold text-center mb-8">LOGIN</h1>

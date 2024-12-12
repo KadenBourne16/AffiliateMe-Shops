@@ -1,19 +1,15 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise'); // Use the promise version
 
-const db = mysql.createConnection({
+// Create a connection pool
+const db = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'affiliatemedb'
+  database: 'affiliatemedb',
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
 
-
-db.connect((err) => {
-  if (err) {
-    console.error("Error connecting to db:", err);
-    return;
-  }
-  console.log("Connected as id " + db.threadId);
-});
-
+// Export the pool
 module.exports = db;

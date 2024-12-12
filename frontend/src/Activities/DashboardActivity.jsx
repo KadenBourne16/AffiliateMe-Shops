@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SideNavbar from '../Components/SidenNavbar';
+import axios from 'axios';
 import NavBar2 from '../Components/GeneralComponents/Navbar2';
 import LoadingAnimation from '../Components/GeneralComponents/LoadingAnimation';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ClothingActivity from './GeneralActivities/ClothingActivity';
 import AutomobileActivity from './GeneralActivities/AutomobileActivity';
 import BeautyActivity from './GeneralActivities/BeautyActivity';
@@ -20,18 +21,41 @@ import SmallMenu from '../Components/GeneralComponents/SmallMenu';
 function Dashboard() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(null);
+  const [loadingUser , setLoadingUser ] = useState(true);
+  const [currUser , setCurrUser ] = useState({}); // Changed userData to currUser 
 
   useEffect(() => {
     const storedLoggedIn = localStorage.getItem('loggedIn');
-    if (storedLoggedIn === 'true') {
-      setIsLoaded(true);
-      setData('Welcome Back');
-    } else {
-      setIsLoaded(false);
-    }
+    setTimeout(() => {
+      if (storedLoggedIn === 'true') {
+        setIsLoaded(true);
+        setData(localStorage.getItem('userId'));
+      } else {
+        setIsLoaded(false);
+      }
+    }, 2000);
   }, []);
 
-  if (!isLoaded) {
+  const getUserById = async (id) => {
+    setLoadingUser (true);
+    try {
+      const userById = await axios.get(`http://localhost:3000/affluencelink/getuserbyid/${id}`);
+      setCurrUser (userById.data[0]); // Set currUser  instead of userData
+      console.log("Fetched user data:", currUser); // Log the fetched data directly
+    } catch (err) {
+      console.log("Error message: ", err);
+    } finally {
+      setLoadingUser (false);
+    }
+  };
+
+  useEffect(() => {
+    if (data) {
+      getUserById(data);
+    }
+  }, [data]);
+
+  if (!isLoaded || loadingUser ) {
     return <LoadingAnimation />;
   }
 
@@ -43,26 +67,23 @@ function Dashboard() {
       </div>
       {/* Main Content Area */}
       <div className="flex-grow">
-        <NavBar2 />
+        <NavBar2 userInfo={currUser } /> {/* Pass currUser  to NavBar2 */}
         <SmallMenu />
         <div className="overflow-y-auto" style={{ height: "calc(100vh - 64px)" }}>
-          <h1 className="text-2xl font-bold mb-4">{data}</h1>
           <div style={{ height: "1000px" }}>
             <Routes>
               <Route path="/" element={<ClothingActivity />} />
-              <Route path="/clothing" element={<ClothingActivity />} />
-              <Route path="/shoes" element={<ShoesActivity />} />
-              <Route path="/luggage" element={<LuggageActivity />} />
-              <Route path="/jewelry" element={<JewelryActivity />} />
-              <Route path="/home" element={<HomeActivity />} />
-              <Route path="/beauty" element={<BeautyActivity />} />
-              <Route path="/kids" element={<KidsActivity />} />
-              <Route path="/wedding" element={<KidsActivity />} />
-              <Route path="/hair" element={<HairActivity />} />
-              <Route path="/phones" element={<PhonesActivity />} />
-              <Route path="/electronics" element={<ElectronicsActivity />} />
-              <Route path="/office" element={<OfficeActivity />} />
               <Route path="/automobile" element={<AutomobileActivity />} />
+              <Route path="/beauty" element={<BeautyActivity />} />
+              <Route path="/electronic" element={<ElectronicsActivity />} />
+              <Route path="/hair" element={<HairActivity />} />
+              <Route path="/home" element={<HomeActivity />} />
+              <Route path="/jewelry" element={<JewelryActivity />} />
+              <Route path="/kids" element={<KidsActivity />} />
+              <Route path="/luggage" element={<LuggageActivity />} />
+              <Route path="/office" element={<OfficeActivity />} />
+              <Route path="/phones" element={<PhonesActivity />} />
+              <Route path="/shoes" element={<ShoesActivity />} />
             </Routes>
           </div>
         </div>

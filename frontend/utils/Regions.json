@@ -1,0 +1,68 @@
+{
+  "regions": [
+    {
+      "name": "Ahafo",
+      "sub_regions": ["Ahafo North", "Ahafo South", "Ahafo Ano North", "Ahafo Ano South"]
+    },
+    {
+      "name": "Ashanti",
+      "sub_regions": ["Juaben South", "Atwima Kwahuma", "North Kumasi", "Obuasi", "Adansi North", "Adansi South", "Afigya Kwabre North", "Afigya Kwabre South", "Ahafo Ano North", "Amansie Central", "Amansie West", "Asante Akim Central", "Asante Akim North", "Asante Akim South", "Atwima Mponua", "Atwima Nwabiagya North", "Atwima Nwabiagya South", "Bekwai Municipal", "Bosome Freho", "Ejisu-Juaben Municipal", "Ejura-Sekyedumase", "Kumasi Metropolitan", "Kwabre East", "Mampong Municipal", "Obuasi Municipal", "Offinso Municipal", "Offinso North", "Sekyere Afram Plains", "Sekyere Central", "Sekyere East", "Sekyere South", "Suame Municipal"]
+    },
+    {
+      "name": "Bono",
+      "sub_regions": ["Banda", "Berekum East", "Berekum West", "Dormaa Central Municipal", "Dormaa East", "Dormaa West", "Jaman North", "Jaman South", "Sunyani Municipal", "Sunyani West"]
+    },
+    {
+      "name": "Bono East",
+      "sub_regions": ["Atebubu-Amantin", "Kintampo North Municipal", "Kintampo South", "Kwame Danso", "Nkoranza North", "Nkoranza South", "Pru East", "Pru West", "Sene East", "Sene West", "Techiman Municipal", "Techiman North"]
+    },
+    {
+      "name": "Central",
+      "sub_regions": ["Abura-Asebu-Kwamankese", "Agona East", "Agona West Municipal", "Ajumako-Enyan-Essiam", "Asikuma-Odoben-Brakwa", "Assin Central Municipal", "Assin North", "Assin South", "Awutu Senya East", "Awutu Senya West", "Cape Coast Metropolitan", "Effutu Municipal", "Ekumfi", "Gomoa Central", "Gomoa East", "Gomoa West", "Hemang Lower Denkyira", "Komenda-Edina-Eguafo-Abirem Municipal", "Mfantseman Municipal", "Twifo Atti Morkwa", "Twifo/Heman/Lower Denkyira", "Upper Denkyira East Municipal", "Upper Denkyira West"]
+    },
+    {
+      "name": "Eastern",
+      "sub_regions": ["Akuapem North", "Akuapem South", "Akyemansa", "Asuogyaman", "Atiwa East", "Atiwa West", "Ayensuano", "Birim Central Municipal", "Birim North", "Birim South", "Denkyembour", "East Akim Municipal", "Fanteakwa North", "Fanteakwa South", "Kwaebibirem", "Kwahu Afram Plains North", "Kwahu Afram Plains South", "Kwahu East", "Kwahu North", "Kwahu South", "Kwahu West Municipal", "Lower Manya Krobo Municipal", "New Juaben North Municipal", "New Juaben South Municipal", "Nsawam Adoagyiri Municipal", "Ofoase Ayirebi", "Suhum Municipal", "Upper Manya Krobo", "Upper West Akim", "West Akim Municipal", "Yilo Krobo Municipal"]
+    },
+    {
+      "name": "Greater Accra",
+      "sub_regions": ["Accra Metropolitan", "Ada East", "Ada West", "Adenta Municipal", "Ashaiman Municipal", "Ga Central Municipal", "Ga East", "Ga North Municipal", "Ga South Municipal", "Ga West Municipal", "Kpone Katamanso Municipal", "Krowor Municipal", "La Dade Kotopon Municipal", "La Nkwantanang Madina Municipal", "Ledzokuku-Krowor Municipal", "Ningo Prampram", "Shai Osudoku", "Tema Metropolitan"]
+    },
+    {
+      "name": "North East",
+      "sub_regions": ["Bunkpurugu Nyankpanduri", "Chereponi", "East Mamprusi Municipal", "Gushegu Municipal", "Karaga", "Mamprugu Moaduri", "Nalerigu", "West Mamprusi", "Yagaba Kubori"]
+    },
+    {
+      "name": "Northern",
+      "sub_regions": ["Bole", "Central Gonja", "East Gonja Municipal", "Kpandai", "Nanumba North Municipal", "Nanumba South", "Saboba", "Sagnarigu Municipal", "Savelugu Municipal", "Tamale Metropolitan", "Tolon", "West Gonja", "West Mamprusi", "Yendi Municipal"]
+    },
+    {
+      "name": "Oti",
+      "sub_regions": ["Biakoye", "Garu", "Jasikan", "Kadjebi", "Krachi East Municipal", "Krachi Nchumuru", "Krachi West", "Nkwanta North", "Nkwanta South"]
+    },
+    {
+      "name": "Savannah",
+      "sub_regions": ["Bole", "Central Gonja", "East Gonja Municipal", "North Gonja", "Sawla-Tuna-Kalba", "West Gonja"]
+    },
+    {
+      "name": "Upper East",
+      "sub_regions": ["Bawku Municipal", "Binduri", "Bolgatanga Municipal", "Bongo", "Builsa North Municipal", "Builsa South", "Garu", "Kassena Nankana East Municipal", "Kassena Nankana West", "Nabdam", "Pusiga", "Talensi", "Tempane"]
+    },
+    {
+      "name": "Upper West",
+      "sub_regions": ["Daffiama Bussie Issa", "Jirapa Municipal", "Lambussie Karni", "Lawra Municipal", "Nadowli Kaleo", "Nandom", "Sissala East", "Sissala West", "Wa East", "Wa Municipal", "Wa West"]
+    },
+    {
+      "name": "Volta",
+      "sub_regions": ["Adaklu", "Agotime Ziope", "Akatsi North", "Akatsi South", "Biakoye", "Central Tongu", "Ho Municipal", "Hohoe Municipal", "Kadjebi", "Keta Municipal", "Ketu North Municipal", "Ketu South Municipal", "Kpando Municipal", "Krachi East Municipal", "Krachi West", "Nkwanta North", "Nkwanta South", "North Dayi", "North Tongu", "South Dayi", "South Tongu"]
+    },
+    {
+      "name": "Western",
+      "sub_regions": ["Ahanta West", "Amenfi Central", "Amenfi East", "Amenfi West Municipal", "Bia East", "Bia West", "Bibiani Anhwiaso Bekwai Municipal", "Ellembelle", "Jomoro", "Juaboso", "Mpohor", "Prestea-Huni Valley Municipal", "Sefwi Akontombra", "Sefwi Wiawso Municipal", "Shama", "Tarkwa Nsuaem Municipal", "Wassa Amenfi East", "Wassa Amenfi West", "Wassa East", "Wassa West"]
+    },
+    {
+      "name": "Western North",
+      "sub_regions": ["Aowin", "Bia East", "Bia West", "Bibiani Anhwiaso Bekwai Municipal", "Juaboso", "Sefwi Akontombra", "Sefwi Wiawso Municipal"]
+    }
+  ]
+}

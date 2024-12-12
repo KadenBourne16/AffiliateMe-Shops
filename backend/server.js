@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 // Routes
 app.use('/affluencelink', userRouter);
 
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err);
