@@ -2,7 +2,7 @@ import React from 'react'
 
 function AnalyticDashboard() {
   return (
-        <div className="p-6 bg-slate-200">
+        <div className="p-6 bg-[#001524]">
         <div className="flex justify-between items-center mb-6">
             <div className="relative">
                 <input type="text" placeholder="Search..." className="pl-10 pr-4 py-2 rounded-full bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -17,10 +17,12 @@ function AnalyticDashboard() {
                 <img src="/background/picture1.jpg" alt="User Avatar" className="w-10 h-10 rounded-full" />
             </div>
 
+            {/* Greetings Card */}
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="col-span-2 bg-slate-50 p-6 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-semibold text-blue-600">Good Afternoon, Jonathan!</h2>
+            <div 
+            className="col-span-2 bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
+                <h2 className="text-4xl font-semibold text-yellow-500">Good Afternoon, Jonathan!</h2>
                 <p className="text-gray-500">Here's what happening with your store today</p>
                 <div className="flex justify-between items-center mt-4">
                     <div>
@@ -52,20 +54,20 @@ function AnalyticDashboard() {
             </div>
 
             {/* Orders Section */}
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <p className="text-gray-500">Orders</p>
+                        <p className="text-gray-50">Orders</p>
                         <p className="text-2xl font-semibold">15,450</p>
                         <p className="text-white">13,675 <span className="text-green-500">▲ 21.8%</span></p>
                     </div>
                     <div>
-                        <p className="text-gray-500">Items sold</p>
+                        <p className="text-gray-50">Items sold</p>
                         <p className="text-2xl font-semibold">1,054</p>
                         <p className="text-white">13,675 <span className="text-red-500">▼ 21.8%</span></p>
                     </div>
                     <div>
-                        <p className="text-gray-500">Refunds</p>
+                        <p className="text-gray-50">Refunds</p>
                         <p className="text-2xl font-semibold">$145.65</p>
                         <p className="text-white">13,675 <span className="text-green-500">▲ 21.8%</span></p>
                     </div>
@@ -87,10 +89,11 @@ function AnalyticDashboard() {
                 </div>
             </div>
 
-            {/*Weekly Sales*/}
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
+            {/*Weekly Sales*/}
+        <div 
+        className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <p className="text-gray-500">Weekly Sales</p>
                 <p className="text-2xl font-semibold">$47K</p>
                 <p className="text-green-500">+3.5%</p>
@@ -98,7 +101,8 @@ function AnalyticDashboard() {
                     <img src="https://placehold.co/100x50" alt="Weekly Sales Chart" />
                 </div>
             </div>
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
+            
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <p className="text-gray-500">Product Share</p>
                 <p className="text-2xl font-semibold">34.6%</p>
                 <p className="text-green-500">▲ 3.5%</p>
@@ -106,7 +110,7 @@ function AnalyticDashboard() {
                     <img src="https://placehold.co/100x50" alt="Product Share Chart" />
                 </div>
             </div>
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <p className="text-gray-500">Market Share</p>
                 <p className="text-2xl font-semibold">26M</p>
                 <div className="mt-4">
@@ -117,7 +121,7 @@ function AnalyticDashboard() {
 
         {/* total order */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <p className="text-gray-500">Total Order</p>
                 <p className="text-2xl font-semibold">58.4K</p>
                 <p className="text-red-500">▼ 13.6%</p>
@@ -127,7 +131,7 @@ function AnalyticDashboard() {
             </div>
 
             {/* total sales */}
-            <div className="col-span-2 bg-slate-50 p-6 rounded-lg shadow-lg">
+            <div className="col-span-2 bg-gradient-to-br from-gray-900 to-gray-700 p-6 rounded-lg shadow-slate-400 shadow-xl text-white">
                 <div className="flex justify-between items-center mb-4">
                     <p className="text-gray-500">Total Sales</p>
                     <div className="flex items-center space-x-2">

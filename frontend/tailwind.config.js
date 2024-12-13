@@ -4,7 +4,10 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'vita': '#BAA333',
+    },
   },
   plugins: [],
 }

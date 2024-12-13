@@ -17,7 +17,7 @@ function App() {
           <Route path="/dashboard/*" element={<Dashboard />} />
           <Route path='/admindashboard/*' element = {<AdminDashboard />}/>
           <Route path='/OwnShops' element = {<CreateShop />}/>
-          <Route path='/myshop' element={<ShopMainActivity/>} />
+          <Route path='/myshop/*' element={<ShopMainActivity/>} />
         </Routes>
       </BrowserRouter>
     </div>
