@@ -1,0 +1,538 @@
+{
+    "categories": [
+      {
+        "value": "automobile-accessory",
+        "label": "automobile-accessory",
+        "subcategories": {
+          "Car Electronics": [
+            "Car Electrical Accessories",
+            "Car player Rear View Camera",
+            "GPS Receiver & Antenna",
+            "Car Electrical Appliances"
+          ],
+          "Car Accessories": [
+            "Interior Accessories",
+            "Exterior Accessories"
+          ],
+          "Motorcycle Accessories & Parts": [
+            "Lighting",
+            "Protective Gears",
+            "Frames & Fittings",
+            "Accessories"
+          ],
+          "Tools, Maintenance & Care": [
+            "Tire Repair Tools",
+            "Code Readers & Scan Tools",
+            "Diagnostic Tools",
+            "Car Washer",
+            "Sponges",
+            "Cloths & Brushes"
+          ],
+          "More": [
+            "Roadway Safety",
+            "Other"
+          ],
+          "Tools": [
+            "Hand Tools",
+            "Measurement & Analysis Instruments",
+            "Other Tools"
+          ],
+          "Safety Protection": [
+            "Video Surveillance",
+            "Other Safety Protection"
+          ]
+        }
+      },
+      {
+        "value": "luggage-and-bags",
+        "label": "Luggage & Bags",
+        "subcategories": {
+          "Women's Bags": [
+            "Shoulder Bags",
+            "Sets Handle Bags",
+            "Cross Body",
+            "Bags Wallets",
+            "Backpacks",
+            "Clutches",
+            "Other Women's Bags"
+          ],
+          "Men's Bags": [
+            "Backpacks",
+            "Briefcases",
+            "Shoulder Bags",
+            "Waist Packs",
+            "Wallets & Clutches"
+          ],
+          "Other Bags & Accessories": [
+            "Bags For Travel",
+            "Kids's Bags",
+            "Other Bags"
+          ]
+        }
+      },
+      {
+        "value": "clothing",
+        "label": "Clothing",
+        "subcategories": {
+          "Women's Clothing": [
+            "Dresses",
+            "Blouses & Shirts",
+            "Tops & Tees",
+            "Jumpsuits & Rompers",
+            "Intimates",
+            "Women's Sets",
+            "Pants & Capris",
+            "Skirts",
+            "Swimwear",
+            "Coats & Jackets",
+            "Shorts",
+            "Socks & Hosiery",
+            "Women's Sleep & Lounge",
+            "Jeans",
+            "Hoodies & Sweatshirts",
+            "Active Tracksuits",
+            "Blazer & Suits",
+            "Leggings",
+            "Sweaters",
+            "Shapers & Bustiers"
+          ],
+          "Men's Clothing": [
+            "Tops & Tees",
+            "Shirts",
+            "Suits & Blazer",
+            "Pants",
+            "Jeans",
+            "Underwear",
+            "Shorts",
+            "Hoodies & Sweatshirts",
+            "Coats & Jackets",
+            "Socks",
+            "Men's Sets",
+            "Active Tracksuits",
+            "Sweaters",
+            "Swimwear"
+          ],
+          "World Apparel": [
+            "Africa Clothing",
+            "Muslim Fashion"
+          ],
+          "Accessories": [
+            "Sunglasses",
+            "Hats & Caps",
+            "Belts",
+            "Scarves & Wraps",
+            "Headwear",
+            "Gloves & Mittens",
+            "Ties",
+            "Other Accessories"
+          ],
+          "Sportswear": [
+            "Jerseys",
+            "Clothing Sets",
+            "Pants",
+            "Other Sportswear"
+          ],
+          "Novelty & Special Use": [
+            "Exotic Apparel"
+          ]
+        }
+      },
+      {
+        "value": "computer-and-office",
+        "label": "Computer",
+        "subcategories": {
+          "Computer": [
+            "Keyboard Mouse Combos",
+            "Mouse",
+            "Keyboards",
+            "External Storage",
+            "Networking",
+            "Tablets",
+            "Other Computer"
+          ],
+          "Office": [
+            "Office Electronics"
+          ]
+        }
+      },
+      {
+        "value": "electronics",
+        "label": "Electronics",
+        "subcategories": {
+          "Smart Electronics": [
+            "Smart Home",
+            "Wearable Devices"
+          ],
+          "Accessories & Parts": [
+            "Selfie Sticks",
+            "Digital Cables",
+            "Camera & Photo",
+            "Other Accessories & Parts"
+          ],
+          "Audio & Video": [
+            "Home Audio & Video",
+            "Portable Audio & Video"
+          ]
+        }
+      },
+      {
+        "value": "home-and-appliances",
+        "label": "home-and-appliances",
+        "subcategories": {
+          "Kitchen": [
+            "Bakeware",
+            "Cooking Tools",
+            "Drinkware"
+          ],
+          "Textile & Decor": [
+            "Bedding Set",
+            "Curtain",
+   "Carpet",
+            "Pillow Case",
+            "Towel",
+            "Wall Sticker",
+            "Painting & Calligraphy",
+            "Clocks",
+            "Event & Party"
+          ],
+          "Lighting": [
+            "Decorative Lighting",
+            "Lamp",
+            "Portable Lighting"
+          ],
+          "Sewing": [
+            "Sewing & Fabric",
+            "Needle Arts & Craft"
+          ],
+          "Storage": [
+            "Bags",
+            "Holders & Racks",
+            "Boxes & Bins"
+          ],
+          "More": [
+            "Cleaning Tools",
+            "Bathroom"
+          ],
+          "Appliances": [
+            "Kitchen",
+            "Air Conditioning",
+            "Personal Care Appliance",
+            "Coffee Makers",
+            "Laundry Appliance"
+          ]
+        }
+      },
+      {
+        "value": "hair",
+        "label": "Hair",
+        "subcategories": {
+          "Human Hair": [
+            "Wigs",
+            "Hair Extension",
+            "Lace Closure",
+            "Lace Frontal",
+            "Hair Weft & Closure"
+          ],
+          "Synthetic Hair": [
+            "Wigs",
+            "Hair Extension"
+          ],
+          "More": [
+            "Blended Hair",
+            "Accessory & Tools"
+          ]
+        }
+      },
+      {
+        "value": "watch-and-jewelry",
+        "label": "watch-and-jewelry",
+        "subcategories": {
+          "Women's Watches": [
+            "Quartz watches",
+            "Digital watches",
+            "Mechanical watches",
+            "Dual display watches"
+          ],
+          "Women's Jewelry": [
+            "Earrings",
+            "Necklaces",
+            "Rings",
+            "Jewelry Sets",
+            "Bracelets",
+            "Anklets",
+            "Body Jewelry"
+          ],
+          "Men's Watches": [
+            "Quartz watches",
+            "Digital watches",
+            "Mechanical watches",
+            "Dual display watches"
+          ],
+          "Men's Jewelry": [
+            "Rings",
+            "Necklaces",
+            "Bracelets",
+            "Earrings"
+          ],
+          "Other Watches": [
+            "Children's watches",
+            "Pocket & Fob Watches",
+            "Watch accessories"
+          ],
+          "Other Jewelry": [
+            "Hair Jewelry",
+            "Brooches",
+            "Tie Clips & Cufflinks",
+            "Key Chains"
+          ]
+        }
+      },
+      {
+        "value": "kids-and-toys",
+        "label": "kids-and-toys",
+        "subcategories": {
+          "Kid's Wear": [
+            "Dresses",
+            "Sets",
+            "Tops",
+            "Bottoms",
+            "Socks & Leggings",
+            "Other Kid's Wear"
+          ],
+          "Kid's Shoes": [
+            "Sneakers",
+            "Leather Shoes",
+            "Sandals",
+            "Loafers",
+            "Boots",
+            "Other Kid's Shoes"
+          ],
+          "Baby Fashion": [
+            "Baby's Sets",
+            "Bodysuits & One-Pieces",
+            "Dresses",
+            "Accessories",
+            "Baby Shoes",
+            "Other Baby Clothing"
+          ],
+          "Baby & Moms": [
+            "Kid's Bags",
+            "Baby Care",
+            "Activity & Gear",
+            "Feeding",
+            "Safety",
+            "Bedding",
+            "Maternity"
+          ],
+          "Toys": [
+            "Learning",
+            "Classic Toys",
+            "Models & Building",
+            "Toy Dolls",
+            "Puzzles & Magic Cubes",
+            "Outdoor Play",
+            "Remote Control",
+            "Baby Toys",
+            "Other Toys"
+          ]
+        }
+      },
+      {
+        "value": "phones-and-tel",
+        "label": "Phones & Tel",
+        "subcategories": {
+          "Phone & Accessories": [
+            "Headphones & Earphones",
+            "Bluetooth headset",
+            "Bags & Cases",
+            "Holders & Stands",
+            "Memory Cards",
+            "Screen Protectors",
+            "Cables & Chargers",
+            "Mobile Phone Adapters"
+          ],
+          "Phones": [
+            "Phones"
+          ],
+          "More": [
+            "Other Phone Products"
+          ]
+        }
+      },
+      {
+        "value": "shoes",
+        "label": "Shoes",
+        "subcategories": {
+          "Women's Shoes": [
+            "Sandals & Flip Flops",
+            "Nude Shoes",
+            "Sneakers",
+            "Doug Shoes",
+            "Loafers",
+            "Canvas Shoes",
+            "Boots",
+            "Slippers",
+            "Other Women's Shoes"
+          ],
+          "Men's Shoes": [
+            "Sneakers",
+            "Business Shoes",
+            "Doug Shoes",
+            "Loafers",
+            "Canvas Shoes",
+            "Boots",
+            "Sandals & Flip Flops",
+   "Slippers",
+            "Other Men's Shoes"
+          ],
+          "Shoe Accessories": [
+            "Insoles",
+            "Other Shoe Accessories"
+          ]
+        }
+      },
+      {
+        "value": "weddings",
+        "label": "Weddings",
+        "subcategories": {
+          "Weddings Dresses": [
+            "Mermaid Wedding Dress",
+            "Tail Wedding Dress",
+            "Bubble Hem Wedding Dress",
+            "Other Wedding Dresses"
+          ],
+          "Suits & Gown": [
+            "Suits & Blazer",
+            "Women Gown",
+            "Flower Girl Dresses"
+          ],
+          "Accessories": [
+            "Wedding Bouquet",
+            "Petticoats",
+            "Bridal Veils",
+            "Bridal Hairpins",
+            "Ties",
+            "Bridal Gloves",
+            "Bridal Hats",
+            "Other Accessories"
+          ]
+        }
+      },
+      {
+        "value": "food",
+        "label": "Food",
+        "subcategories": {
+          "Fruits": [
+            "Citrus Fruits",
+            "Berries",
+            "Stone Fruits",
+            "Tropical Fruits",
+            "Pomes",
+            "Melons",
+            "Dried Fruits"
+          ],
+          "Vegetables": [
+            "Leafy Greens",
+            "Cruciferous Vegetables",
+            "Root Vegetables",
+            "Alliums",
+            "Nightshades",
+            "Legumes",
+            "Squash"
+          ],
+          "Grains": [
+            "Whole Grains",
+            "Refined Grains",
+            "Cereals",
+            "Pseudograins",
+            "Grain Products"
+          ],
+          "Proteins": [
+            "Red Meat",
+            "Poultry",
+            "Fatty Fish",
+            "White Fish",
+            "Shellfish",
+            "Chicken Eggs",
+            "Duck Eggs",
+            "Quail Eggs",
+            "Beans",
+            "Lentils",
+            "Chickpeas",
+            "Nuts"
+          ],
+          "Seeds": [
+            "Oilseed",
+            "Nuts",
+            "Fruiting Seeds",
+            "Edible Seeds"
+          ],
+          "Dairy": [
+            "Whole Milk",
+            "Skim Milk",
+            "Plant-Based Milk",
+            "Soft Cheese",
+            "Hard Cheese",
+            "Blue Cheese",
+            "Regular Yogurt",
+            "Greek Yogurt",
+            "Non-Dairy Yogurt",
+            "Unsalted Butter",
+            "Heavy Cream",
+            "Sour Cream"
+          ],
+          "Fats and Oils": [
+            "Vegetable Oils",
+            "Animal Fats",
+            "Nut Oils",
+            "Coconut Oil",
+            "Avocado Oil",
+            "Essential Fatty Acids"
+          ],
+          "Raw": [
+            "Raw Fruits",
+            "Raw Vegetables",
+            "Raw Nuts and Seeds",
+            "Raw Fish",
+            "Raw Dairy"
+          ],
+          "Fast Foods": [
+            "Burgers",
+            "Pizza",
+            "Fried Chicken",
+            "Tacos",
+            "Soup Foods",
+            "Spicy Foods",
+            "Sandwiches",
+            "French Fries",
+            "Salads"
+          ],
+          "Pastries": [
+            "Sweet Pastries",
+            "Savory Pastries",
+            "Puff Pastry",
+            "Shortcrust Pastry",
+            "Choux Pastry"
+          ],
+          "Snacks": [
+            "Chips",
+            "Popcorn",
+            "Nuts and Trail Mix",
+            "Granola Bars",
+            "Cookies",
+            "Crackers",
+            "Fruit Snacks"
+          ],
+          "Liquids": [
+            "Water",
+            "Juices",
+            "Sodas",
+            "Alcoholic Beverages",
+            "Smoothies",
+            "Broths and Soups",
+            "Tea and Coffee"
+          ]
+        }
+      }
+    ]
+}

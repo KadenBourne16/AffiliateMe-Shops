@@ -1,0 +1,111 @@
+Fruits
+Citrus Fruits (e.g., oranges, lemons, limes)
+Berries (e.g., strawberries, blueberries, raspberries)
+Stone Fruits (e.g., peaches, cherries, plums)
+Tropical Fruits (e.g., mangoes, pineapples, bananas)
+Pomes (e.g., apples, pears)
+Melons (e.g., watermelon, cantaloupe)
+Dried Fruits (e.g., raisins, apricots)
+
+2. Vegetables
+Leafy Greens (e.g., spinach, kale, lettuce)
+Cruciferous Vegetables (e.g., broccoli, cauliflower, Brussels sprouts)
+Root Vegetables (e.g., carrots, potatoes, beets)
+Alliums (e.g., onions, garlic, leeks)
+Nightshades (e.g., tomatoes, bell peppers, eggplants)
+Legumes (e.g., peas, green beans)
+Squash (e.g., zucchini, butternut squash)
+
+3. Grains
+Whole Grains (e.g., brown rice, quinoa, whole wheat)
+Refined Grains (e.g., white rice, white bread)
+Cereals (e.g., oats, cornflakes)
+Pseudograins (e.g., amaranth, buckwheat)
+Grain Products (e.g., pasta, tortillas, bread)
+
+4. Proteins
+Meat
+Red Meat (e.g., beef, lamb, pork)
+Poultry (e.g., chicken, turkey, duck)
+Fish and Seafood
+Fatty Fish (e.g., salmon, mackerel)
+White Fish (e.g., cod, tilapia)
+Shellfish (e.g., shrimp, crab, clams)
+Eggs
+Chicken Eggs
+Duck Eggs
+Quail Eggs
+Legumes
+Beans (e.g., black beans, kidney beans)
+Lentils
+Chickpeas
+Nuts and Seeds
+Nuts (e.g., almonds, walnuts, cashews)
+Seeds (e.g., chia seeds, flaxseeds, pumpkin seeds)
+
+5. Dairy
+Milk
+Whole Milk
+Skim Milk
+Plant-Based Milk (e.g., almond milk, soy milk)
+Cheese
+Soft Cheese (e.g., cream cheese, ricotta)
+Hard Cheese (e.g., cheddar, parmesan)
+Blue Cheese
+Yogurt
+Regular Yogurt
+Greek Yogurt
+Non-Dairy Yogurt
+Butter and Cream
+Unsalted Butter
+Heavy Cream
+Sour Cream
+
+6. Fats and Oils
+Vegetable Oils (e.g., olive oil, canola oil, sunflower oil)
+Animal Fats (e.g., butter, lard, tallow)
+Nut Oils (e.g., almond oil, walnut oil)
+Coconut Oil
+Avocado Oil
+Essential Fatty Acids (e.g., omega-3, omega-6)
+
+7. Raw
+Raw Fruits
+Raw Vegetables
+Raw Nuts and Seeds
+Raw Fish (e.g., sushi, sashimi)
+Raw Dairy (e.g., raw milk, raw cheese)
+
+8. Fast Foods
+Burgers
+Pizza
+Fried Chicken
+Tacos
+Sandwiches
+French Fries
+Salads (often served in fast-food settings)
+
+9. Pastries
+Sweet Pastries (e.g., croissants, danishes, éclairs)
+Savory Pastries (e.g., quiches, meat pies)
+Puff Pastry
+Shortcrust Pastry
+Choux Pastry
+
+10. Snacks
+Chips (e.g., potato chips, tortilla chips)
+Popcorn
+Nuts and Trail Mix
+Granola Bars
+Cookies
+Crackers
+Fruit Snacks
+
+11. Liquids
+Water
+Juices (e.g., orange juice, apple juice)
+Sodas
+Alcoholic Beverages (e.g., beer, wine, spirits)
+Smoothies
+Broths and Soups
+Tea and Coffee

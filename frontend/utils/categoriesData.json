@@ -1,0 +1,61 @@
+{
+    "categories": [
+      {
+        "value": "food",
+        "label": "Food"
+      },
+      {
+        "value": "clothing",
+        "label": "Clothing"
+      },
+      {
+        "value": "shoes",
+        "label": "Shoes"
+      },
+      {
+        "value": "luggage-and-bags",
+        "label": "Luggage & Bags"
+      },
+      {
+        "value": "watch-and-jewelry",
+        "label": "Watch & Jewelry"
+      },
+      {
+        "value": "kids-and-toys",
+        "label": "Kids & Toys"
+      },
+      {
+        "value": "home-and-appliances",
+        "label": "Home & Appliances"
+      },
+      {
+        "value": "beauty",
+        "label": "Beauty"
+      },
+      {
+        "value": "weddings",
+        "label": "Weddings"
+      },
+      {
+        "value": "hair",
+        "label": "Hair"
+      },
+      {
+        "value": "phones-and-tel",
+        "label": "Phones & Tel"
+      },
+      {
+        "value": "electronics",
+        "label": "Electronics"
+      },
+      {
+        "value": "computer-and-office",
+        "label": "Computer & Office"
+      },
+      {
+        "value": "automobile-accessory",
+        "label": "Automobile Accessory"
+      }
+    ]
+  }
+  

@@ -1,14 +1,20 @@
 Kitchen
-BakewareCooking ToolsDrinkware
+Bakeware, Cooking Tools, Drinkware
+
 Textile&Decor
-Bedding SetCurtainCarpetPillow CaseTowelWall StickerPainting & CalligraphyClocksEvent&Party
+BeddingSet, Curtain, Carpet, Pillow Case, Towel, Wall Sticker, Painting & Calligraphy, Clocks, Event&Party
+
 Lighting
-Decorative LightingLampPortable Lighting
+Decorative Lighting, Lamp, Portable Lighting
+
 Sewing
-Sewing & FabricNeedle Arts & Craft
+Sewing & Fabric, Needle Arts & Craft
+
 Storage
-BagsHolders & RacksBoxes & Bins
+BagsHolders & Racks, Boxes & Bins
+
 More
-Cleaning ToolsBathroom
+Cleaning Tools, Bathroom
+
 Appliances
-KitchenAir ConditioningPersonal Care ApplianceCoffee MakersLaundry Appliance
+Kitchen, Air Conditioning, Personal Care Appliance, Coffee Makers, Laundry Appliance

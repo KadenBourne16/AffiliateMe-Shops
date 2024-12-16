@@ -1,0 +1,142 @@
+AUTOMOBILE
+Car Electronics : [Car Electrical Accessories, Car player Rear View Camera, GPS Receiver & Antenna, Car Electrical Appliances]
+
+Car Accessories : [Interior Accessories, Exterior Accessories]
+
+Motorcycle Accessories & Parts : [Lighting, Protective Gears, Frames & Fittings, Accessories]
+
+Tools, Maintenance & Care : [Tire Repair Tools, Code Readers & Scan Tools, Diagnostic Tools, Car Washer, Sponges, Cloths & Brushes]
+
+More: [Roadway Safety, Other]
+
+Tools: [Hand Tools, Measurement & Analysis Instruments, Other Tools]
+
+Safety Protection: [Video Surveillance, Other Safety Protection]
+---------------------------------------------------------------------------
+LUGGAGES&BAGS
+Women's Bags : [Shoulder Bags Sets HandleBags, Cross Body, Bags Wallets, Backpacks, Clutches, Otherwomen's Bags]
+
+Men's Bags: [Backpacks, Briefcases, Shoulder Bags, Waist Packs, Wallets & Clutches]
+
+Other Bags & Accessories: [Bags For Travel, Kids's Bags, Other Bags]
+---------------------------------------------------------------------------------
+CLOTHING
+Women's Clothing :[DressesBlouses & ShirtsTops & TeesJumpsuits & RompersIntimatesWomen's SetsPants & CaprisSkirtsSwimwearsCoats & JacketsShortsSocks & HosieryWomen's Sleep & LoungeJeansHoodies & SweatshirtsActive TracksuitsBlazer & SuitsLeggingsSweatersShapers & Bustiers]
+
+Men's Clothing : [Tops & Tees Shirts Suits & Blazer Pants Jeans Underwears Shorts Hoodies & Sweatshirts Coats&Jackets Socks Men's Sets Active Tracksuits Sweaters Swimwears]
+
+World Apparel : [Africa Clothing, Muslim Fashion.]
+
+Accessories : [Sunglasses Hats & Caps Belts Scarves & Wraps Headwear Gloves & Mittens Ties Other Accessories]
+
+Sportswear : [Jerseys Clothing Sets Pants Other sportswear]
+
+Novelty & Special Use : [Exotic Apparel]
+---------------------------------------------------------------------------------
+COMPUTER
+Computer:[Keyboard Mouse Combos, Mouse, Keyboards, External Storage, Networking, Tablets, Other Computer]
+
+Office: [Office Electronics]
+---------------------------------------------------------------------------------
+ELECTRONICS
+Smart Electronics: [SmartHome, Wearable Devices]
+
+Accessories & Parts: [Selfie Sticks, Digital Cables, Camera & Photo, Other Accessories & Parts]
+
+Audio & Video: [Home Audio & Video, Portable Audio & Video]
+--------------------------------------------------------------------------------
+HOME
+Kitchen: [Bakeware, Cooking Tools, Drinkware]
+
+Textile&Decor: [BeddingSet, Curtain, Carpet, Pillow Case, Towel, Wall Sticker, Painting & Calligraphy, Clocks, Event&Party]
+
+Lighting:[Decorative Lighting, Lamp, Portable Lighting]
+
+Sewing:[Sewing & Fabric, Needle Arts & Craft]
+
+Storage: [BagsHolders & Racks, Boxes & Bins]
+
+More: [Cleaning Tools, Bathroom]
+
+Appliances: [Kitchen, Air Conditioning, Personal Care Appliance, Coffee Makers, Laundry Appliance]
+-----------------------------------------------------------------------------------
+HUMAN HAIR
+
+Human Hair: [Wigs, Hair Extension, Lace Closure, Lace Frontal, Hair Weft & Closure]
+
+Synthetic Hair :[Wigs, Hair Extension]
+
+more: [Blended Hair, Accessory & Tools]
+-----------------------------------------------------------------------------------
+JEWELRY
+Women's Watches:[Quartz watches, Digital watches, Mechanical watches, Dual display watches]
+
+Women's Jewelry:[Earrings, Necklaces, Rings Jewelry Sets, Bracelets, Anklets, Body Jewelry]
+
+Men's Watches:[Quartz watches, Digital watches, Mechanical watches, Dual display watches]
+
+Men's Jewelry:[Rings, Necklaces, Bracelets, Earrings]
+
+Other Watches:[Children's watches, Pocket & Fob Watches, Watch accessorices]
+
+Other Jewelry:[Hair Jewelry, Brooches, Tie Clips & Cufflinks, Key Chains]
+--------------------------------------------------------------------------------------
+KIDS
+Kid's Wear: [Dresses, Sets, Tops, Bottoms, Socks & Leggings, Other Kid's Wear]
+
+Kid's Shoes: [Sneakers, Leather Shoes, Sandals, Loafers, BootsOther kid's Shoes]
+
+Baby Fashion: [Baby's Sets, Bodysuits & One-Pieces, Dresses, Accessories, Baby Shoes, other Baby Clothing]
+
+Baby & Moms: [Kid's Bags, Baby Care, Activity & Gear, Feeding, Safety, Bedding, Maternity]
+
+Toys: [Learning, Classic Toys, Models & Building, Toy Dolls Puzzles & Magic Cubes, Outdoor Play, Remote Control, Baby Toys, Other Toys]
+--------------------------------------------------------------------------------------
+PHONES&TEL
+Phone&Accessories: [Headphones&Earphones, Bluetooth headset, Bags & Cases, Holders & Stands, Memory Cards, Screen Protectors, Cables & Chargers, Mobile Phone Adapters]
+
+Phones: [Phones]
+
+More: [Other Phone Products]
+--------------------------------------------------------------------------------------
+SHOES
+Women's Shoes: [Sandals & Flip Flops, Nude Shoes, Sneakers, Doug Shoes, Loafers, Canvas Shoes, Boots, Slippers, Other Women's Shoes]
+
+Men's Shoes: [Sneakers, Business Shoes, Doug Shoes, Loafers, Canvas Shoes, Boots, Sandals & Flip Flops, Slippers, Other Men's Shoes]
+
+Shoe Accessories: [Insoles, Other Shoe Accessories]
+---------------------------------------------------------------------------------------
+WEDDINGS
+Weddings Dresses: [Mermaid Wedding Dress, Tail Wedding Dress, Bubble Hem Wedding Dress, Other Wedding Dresses]
+
+Suits & Gown: [Suits & Blazer, Women Gown, Flower Girl Dresses]
+
+Accessories: [Wedding BouquetPetticoatsBridal VeilsBridal HairpinsTiesBridal GlovesBridal HatsOther Accessories]
+----------------------------------------------------------------------------------------
+FOOD
+Fruits:[Citrus Fruits, Berries, Stone Fruits, Tropical Fruits, Pomes, Melons, Dried Fruits] 
+
+Vegetables:[Leafy Greens,Cruciferous Vegetables, Root Vegetables, Alliums, Nightshades, Legumes, Squash]
+
+Grains: [Whole Grains, Refined Grains, Cereals, Pseudograins, Grain Products]
+
+Proteins:[Red Meat, Poultry, Fatty Fish (e.g., salmon, mackerel), White Fish (e.g., cod, tilapia), Shellfish (e.g., shrimp, crab, clams), Chicken Eggs,Duck Eggs,Quail Eggs, Beans (e.g., black beans, kidney beans), Lentils, Chickpeas, 
+Nuts (e.g., almonds, walnuts, cashews)]
+
+Seeds: [Oilseed, Nuts, Fruiting Seeds, Edible Seeds]
+
+Dairy[Whole Milk,Skim Milk,Plant-Based Milk (e.g., almond milk, soy milk), Soft Cheese (e.g., cream cheese, ricotta), Hard Cheese (e.g., cheddar, parmesan), Blue Cheese, Regular Yogurt, Greek Yogurt, Non-Dairy Yogurt, Unsalted Butter, Heavy Cream
+Sour Cream]
+
+Fats and Oils:[Vegetable Oils (e.g., olive oil, canola oil, sunflower oil), Animal Fats (e.g., butter, lard, tallow), Nut Oils (e.g., almond oil, walnut oil), Coconut Oil, Avocado Oil, Essential Fatty Acids (e.g., omega-3, omega-6)]
+
+Raw: [Raw Fruits, Raw Vegetables, Raw Nuts and Seeds, Raw Fish (e.g., sushi, sashimi), Raw Dairy (e.g., raw milk, raw cheese)]
+
+Fast Foods:[Burgers, Pizza, Fried Chicken, Tacos, Soup Foods, Spicy Foods, Sandwiches, French Fries, Salads]
+
+Pastries: [Sweet Pastries (e.g., croissants, danishes, éclairs), Savory Pastries (e.g., quiches, meat pies), Puff Pastry, Shortcrust Pastry, Choux Pastry
+
+Snacks: [Chips (e.g., potato chips, tortilla chips), Popcorn, Nuts and Trail Mix, Granola Bars, Cookies, Crackers, Fruit Snacks]
+
+Liquids:[Water, Juices (e.g., orange juice, apple juice), Sodas, Alcoholic Beverages (e.g., beer, wine, spirits), Smoothies, Broths and Soups, Tea and Coffee
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------

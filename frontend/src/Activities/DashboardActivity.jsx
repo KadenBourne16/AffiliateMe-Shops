@@ -60,7 +60,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="flex h-auto bg-black">
+    <div className="flex h-auto bg-gray-900">
       {/* Sidebar */}
       <div className="w-64 h-screen sticky top-0 z-40">
         <SideNavbar />

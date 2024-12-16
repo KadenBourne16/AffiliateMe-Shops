@@ -4,6 +4,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const port = 3000;
 const userRouter = require('./Router/userRouter');
+const productRouter = require('./Router/productRouter')
 const bodyParser = require('body-parser');
 
 // Middleware
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/affluencelink', userRouter);
+app.use('/affluencelink', productRouter);
 
 
 // Error handling middleware
