@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SpecificationCard from '../ShopComponents/SubComponents/ProductFormsSubComponents/SpecificationsCard';
 import categoriesData from '../../../utils/categoriesData.json';
-import { final_price, discount_amount } from '../../../utils/calculations/final_price';
+import { final_price } from '../../../utils/calculations/final_price';
 import axios from 'axios';
 import categoriesSubCat from '../../../utils/categories&subCategoriesData.json';
 
@@ -15,13 +15,13 @@ function ProductForm() {
     const [pricingCal, setPricingCal] = useState(0);
     const [shippingOption, setShippingOption] = useState('');
     const [tag, setTag] = useState('');
-    const [specificationinfo, setSpecificationInfo] = useState(null);
+    const [specificationinfo, setSpecificationInfo] = useState({ label: '', property: '' });
     const [selectedCategory, setSelectedCategory] = useState(''); // State for selected category
+    const [selectedSubCategory, setSelectedSubCategory] = useState(''); // State for selected sub-category
     const [subCategories, setSubCategories] = useState([]);
-
+    const [userID, setUserID] = useState(localStorage.getItem('userId'))
     const handleImageSelect = (e) => {
         const selectedImagesVar = e.target.files;
-
         if (selectedImagesVar.length > 4) {
             setSelectedImage([]);
             alert("Cannot select more than 4 images");
@@ -44,16 +44,16 @@ function ProductForm() {
         showSubCat();
     }, [selectedCategory]); // Run effect when selectedCategory changes
 
-    const CheckDescriptionLength = (e) => {
+    const handleDescription = (e) => {
         const { name, value } = e.target;
         setCharacterCount(value.length);
         if (name === "product_description" && value.length > 500) {
-            setProductDetails((values) => ({ ...values, "product_description": value }));
             const errorMessage = "Product description cannot be more than 500 characters";
             setError(errorMessage);
             setIsErrorVisible(true);
         } else {
             setIsErrorVisible(false);
+            setProductDetails((values) => ({ ...values, "product_description": value }));
         }
     };
 
@@ -70,7 +70,7 @@ function ProductForm() {
         e.preventDefault();
         const base_price = parseFloat(document.querySelector('input[name="base_price"]').value);
         const discount = parseFloat(document.querySelector('input[name="discount"]').value);
-    
+
         if (!isNaN(base_price)) {
             if (isNaN(discount)) {
                 setPricingCal(base_price);
@@ -96,16 +96,42 @@ function ProductForm() {
         const productData = {
             ...productDetails,
             specifications,
+            userId: userID,
             pricing: pricingCal,
             shipping: shippingOption,
             tags: tag,
-            images: selectedImage
+            category: selectedCategory, // Add selected category
+            subCategory: selectedSubCategory, // Add selected sub-category
+            image: [...selectedImage]
         };
 
+        const formData = new FormData();
+
+        Object.keys(productData).forEach(key => {
+            if (key === 'image' && productData[key]) {
+                productData[key].forEach(image => {
+                    formData.append('images', image); // Change 'image' to 'images'
+                });
+            }else if(key === 'specifications'){
+                formData.append(key, JSON.stringify(productData[key]));
+            } else {
+                formData .append(key, productData[key]);
+            }
+        });
+
+        // Log the FormData entries for debugging
+        for (var pair of formData.entries()) {
+            console.log(pair[0] + ', ' + pair[1]);
+        }
+
         try {
-            const response = await axios.post('http://localhost:3000/affluencelink/products', productData);
+            const response = await axios.post('http://localhost:3000/affluencelink/products', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
             console.log('Product added successfully:', response.data);
-        } catch ( error) {
+        } catch (error) {
             console.error('Error adding product:', error);
         }
     };
@@ -134,7 +160,7 @@ function ProductForm() {
                             </div>
                             <div className="shadow-lg p-4 rounded">
                                 <h2 className="text-lg font-semibold mb-2">Add Images</h2>
-                                <div className='space-y-5'>
+                                <div className='mb-2 flex flex-wrap gap-1'>
                                     {selectedImage.length > 0 ? (
                                         [...selectedImage].map((image, index) => (
                                             <img 
@@ -142,7 +168,7 @@ function ProductForm() {
                                             src={URL.createObjectURL(image)} 
                                             alt={`Image ${index + 1}`} 
                                             onError={(event) => { console.error('Error loading image:', event); event.target.src = '(link unavailable)'; }} 
-                                            className='h-25 w-25 object-cover rounded-md border border-gray-900'
+                                            className='h-20 w-25 object-cover rounded-md border border-gray-900'
                                             />
                                         ))
                                     ) : (
@@ -157,7 +183,7 @@ function ProductForm() {
                         <div className="shadow-lg p-4 rounded">
                             <h2 className="text-lg font-semibold mb-2">Details</h2>
                             <div className="space-y-4">
-                                <textarea name="product_description" placeholder="Product description:" className="w-full p-2 border rounded h-96" onChange={CheckDescriptionLength}></textarea>
+                                <textarea name="product_description" placeholder="Product description:" className="w-full p-2 border rounded h-96" onChange={handleDescription}></textarea>
                                 <div>
                                     <h1 className='text-gray-500 opacity-70 text-right'>{characterCount}/500</h1>
                                 </div>
@@ -188,7 +214,7 @@ function ProductForm() {
                                         </option>
                                     ))}
                                 </select>
-                                <select className="w-full p-2 border rounded">
+                                <select className="w-full p-2 border rounded" onChange={(e) => setSelectedSubCategory(e.target.value)}>
                                     <option>Select sub-category:</option>
                                     {subCategories.map((subCategory) => (
                                         <option value={subCategory} key={subCategory}>{subCategory}</option>
