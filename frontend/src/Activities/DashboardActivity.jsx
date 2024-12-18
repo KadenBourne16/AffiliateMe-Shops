@@ -22,12 +22,11 @@ function Dashboard() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(null);
   const [loadingUser , setLoadingUser ] = useState(true);
-  const [currUser , setCurrUser ] = useState({}); // Changed userData to currUser 
+  const [currUser , setCurrUser ] = useState({}); // Changed userData to currUser  
 
   useEffect(() => {
-    const storedLoggedIn = localStorage.getItem('loggedIn');
     setTimeout(() => {
-      if (storedLoggedIn === 'true') {
+      if (localStorage.getItem('token')) {
         setIsLoaded(true);
         setData(localStorage.getItem('userId'));
       } else {
@@ -39,9 +38,14 @@ function Dashboard() {
   const getUserById = async (id) => {
     setLoadingUser (true);
     try {
-      const userById = await axios.get(`http://localhost:3000/affluencelink/getuserbyid/${id}`);
+      const token = localStorage.getItem('token'); // Get the token from local storage
+      const userById = await axios.get(`http://localhost:3000/affluencelink/getuserbyid/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`, // Include the token in the Authorization header
+        },
+      });
       setCurrUser (userById.data[0]); // Set currUser  instead of userData
-      console.log("Fetched user data:", currUser); // Log the fetched data directly
+      console.log("Fetched user data:", userById.data[0]); // Log the fetched data directly
     } catch (err) {
       console.log("Error message: ", err);
     } finally {

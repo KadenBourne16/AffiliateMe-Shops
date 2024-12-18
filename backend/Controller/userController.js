@@ -1,9 +1,11 @@
+// Controller/userController.js
 const db = require('../DBConnection/dbconnection');
 const CryptoJS = require('crypto-js');
 const encryption = require('../util/encryption-decryption');
+const jwt = require('jsonwebtoken'); // Import jsonwebtoken
 
-// Use a consistent secret key for encryption
-// const SECRET_KEY = 'Kaden16'; // Store this securely in environment variables in production
+// Use a consistent secret key for JWT
+const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key'; // Store this securely in environment variables in production
 
 exports.validateUser  = async (req, res) => {
     const { email, password } = req.body;
@@ -26,14 +28,16 @@ exports.validateUser  = async (req, res) => {
         const user = results[0];
         const encryptedInputPassword = encryption.encryption(password);
 
-        console.log(encryptedInputPassword, user.password);
         // Compare the encrypted input password with the stored password
         if (encryptedInputPassword !== user.password) {
             return res.status(401).json({ message: "Invalid email or password." });
         }
 
-        // If the email and password are valid, respond with success
-        res.status(200).json({ message: "Login successful", userId: user.idUser  });
+        // Generate JWT token
+        const token = jwt.sign({ id: user.idUser , email: user.email }, JWT_SECRET, { expiresIn: '1h' });
+
+        // If the email and password are valid, respond with success and the token
+        res.status(200).json({ message: "Login successful", userId: user.idUser , token });
     } catch (err) {
         res.status(500).json({ message: "Error processing request: " + err.message });
     }

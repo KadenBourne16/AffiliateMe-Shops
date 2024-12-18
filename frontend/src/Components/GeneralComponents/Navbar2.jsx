@@ -9,12 +9,13 @@ const NavBar2 = (props) => {
     const [showDropdown, setShowDropdown] = useState(false);
 
     useEffect(() => {
-        const storedLoggedIn = localStorage.getItem('loggedIn');
-        setIsLoggedIn(storedLoggedIn === 'true');
+        if(localStorage.getItem('token') !== "removed")
+             setIsLoggedIn(true);
     }, []);
 
     const logout = () => {
-        localStorage.setItem('loggedIn', 'false');
+        localStorage.setItem('userId', null);
+        localStorage.setItem('token', "removed");
         navigate('/');
     };
 
@@ -56,12 +57,13 @@ const NavBar2 = (props) => {
             ) : null}
 
             {/* Cart Icon */}
-            <div className="relative">
+            {isLoggedIn ? (  <div className="relative">
                 <button className='flex mr-20'>
                     <h1 className='text-2xl text-green-500 font-extrabold'>55</h1>
                     <FaShoppingCart className="text-2xl cursor-pointer" />
                 </button>
-            </div>
+            </div>): null}
+          
 
             {/* Profile Button */}
             {isLoggedIn ? (

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'; // Import axios for making HTTP requests
-import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
@@ -58,16 +57,15 @@ function Login() {
 
       // Check for success message
       if (response.data.message === "Login successful") {
-        navigate("/dashboard");
-        // console.log(response);
-        // console.log("Login Id: " + response.data.userId);
-        localStorage.setItem('loggedIn', 'true');
-        localStorage.setItem('userId', response.data.userId);// Redirect to the dashboard
+        // Store the JWT token in local storage
+        localStorage.setItem('token', response.data.token); // Store the token
+        localStorage.setItem('userId', response.data.userId); // Store userId if needed
+
+        navigate("/dashboard"); // Redirect to the dashboard
       } else {
         // Handle other messages (e.g., invalid credentials)
         setErrorMessage(response.data.message);
         console.error("Login failed:", response.data.message);
-        
       }
     } catch (err) {
       // Handle errors (network issues, server errors, etc.)
@@ -107,7 +105,7 @@ function Login() {
 
           <input
             type="button"
-            value="Login"
+ value="Login"
             className="mt-8 w-full h-14 bg-green-500 rounded-lg text-white font-bold transition-all duration-500 ease-in-out hover:bg-green-600 text-lg"
             onClick={handleSubmit}
           />
